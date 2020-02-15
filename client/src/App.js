@@ -1,11 +1,16 @@
 import React from 'react';
-
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import './App.css';
+import Income from './components/income.js'
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello, world!</h1>
+      <Router>
+        <Switch>
+          <Route exact path="/" component={Income}/>
+        </Switch>
+      </Router>
     </div>
   );
 }

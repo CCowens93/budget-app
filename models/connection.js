@@ -1,9 +1,6 @@
-/* Import the mongoose module
- *
- */
 const mongoose = require('mongoose');
 
-const connectionString = process.env.MONGODB_URI || "mongodb://localhost/currencyDB";
+const connectionString = process.env.MONGODB_URI || "mongodb://localhost/budgetDB";
 
 
 

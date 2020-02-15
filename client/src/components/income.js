@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
-import axios from 'axios'
+import axios from 'axios';
 
 class income extends Component {
 
@@ -62,7 +62,7 @@ class income extends Component {
                 <br></br>
                 <input
                 name="staticOrVariedIncome"
-                type="boolean"
+                type="text"
                 placeholder="Static or Varied"
                 value={this.state.staticOrVariedIncome}
                 onChange={this.changeHandler}
@@ -75,6 +75,7 @@ class income extends Component {
                 value={this.state.monthlyIncome}
                 onChange={this.changeHandler}
                 />
+                <br></br>
                 <input
                 type="submit"
                 value="Submit"

@@ -2,7 +2,7 @@ const mongoose = require('./connection.js')
 
 const IncomeSchema = new mongoose.Schema({
     career: String,
-    staticOrVariedIncome: Boolean,
+    staticOrVariedIncome: String,
     monthlyIncome: Number,
 })
 
