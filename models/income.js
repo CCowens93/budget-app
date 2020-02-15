@@ -6,30 +6,30 @@ const IncomeSchema = new mongoose.Schema({
     monthlyIncome: Number,
 })
 
-const CurrencyCollection = mongoose.model('Income', IncomeSchema)
+const IncomeCollection = mongoose.model('Income', IncomeSchema)
 
 //getAll
 
 const getAllIncome = () => {
-    return CurrencyCollection.find()
+    return IncomeCollection.find()
 }
 
 //getOne
 
 const getOneIncome = (incomeId) => {
-    return CurrencyCollection.findById(incomeId)
+    return IncomeCollection.findById(incomeId)
 }
 
 //create
 
 const createIncome = (newIncome) => {
-    return CurrencyCollection.create(newIncome)
+    return IncomeCollection.create(newIncome)
 }
 
 //delete
 
 const deleteIncome = (incomeId) => {
-    return CurrencyCollection.delete({_id: incomeId})
+    return IncomeCollection.delete({_id: incomeId})
 }
 
 module.exports = {
