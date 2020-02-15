@@ -29,7 +29,7 @@ const createIncome = (newIncome) => {
 //delete
 
 const deleteIncome = (incomeId) => {
-    return CurrencyCollection.delete(incomeId)
+    return CurrencyCollection.delete({_id: incomeId})
 }
 
 module.exports = {
