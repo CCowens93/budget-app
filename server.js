@@ -1,9 +1,7 @@
 const express = require('express')
 const app = express()
 
-// const { currencyRouter } = require('./controllers/currency.js')
-// const { expenseRouter } = require('./controllers/expense.js')
-
+const { incomeRouter } = require('./controllers/income.js')
 
 
 app.use(express.urlencoded({extended: true}))
@@ -17,8 +15,8 @@ app.use(express.static(`${__dirname}/client/build`))
 
 
 
-// app.use('/api/currency', currencyRouter)
-// app.use('/api/expense', expenseRouter)
+app.use('/api/income', incomeRouter)
+
 
 
 
